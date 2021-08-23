@@ -5,11 +5,10 @@
 extern "C" {
 #endif
 
-// Demangles symbol given in `mangled` argument into `out` buffer
-//
-// Returns 0 if `mangled` is not Rust symbol or if `out` buffer is too small
-// Returns 1 otherwise
-int rustc_demangle(const char *mangled, char *out, size_t out_size);
+// For size_t
+#include <stddef.h>
+
+char *rustc_demangle(const char *mangled, char *out, size_t *len, int *status);
 
 #ifdef __cplusplus
 }
