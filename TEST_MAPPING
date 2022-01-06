@@ -2,7 +2,12 @@
 {
   "presubmit": [
     {
-      "name": "rustc-demangle-capi_device_test_src_lib"
+      "name": "rustc-demangle-capi_test_src_lib"
+    }
+  ],
+  "presubmit-rust": [
+    {
+      "name": "rustc-demangle-capi_test_src_lib"
     }
   ]
 }
